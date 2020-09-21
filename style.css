@@ -1,0 +1,85 @@
+:root {
+  --main-bg-color: #22eaaa;
+  --list-bg-color: rgba(17, 172, 120, 0.6);
+  --border-color: #225566;
+  --second-border-color: #26534d;
+  --text-color: rgba(0, 0, 0, 0.7);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+.l-heading {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+input,
+button {
+  outline: 2px;
+  border: none;
+}
+
+input[placeholder] {
+  font-size: 1.4em;
+  color: var(--text-color);
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.make-list {
+  text-align: center;
+  color: var(--text-color);
+}
+
+#input {
+  padding: 10px;
+  width: min(400px, 80%);
+  border-radius: 5px;
+}
+
+#list-items {
+  padding-left: 0;
+}
+
+#list-items > li {
+  font-weight: 400;
+  background-color: var(--list-bg-color);
+  position: relative;
+  padding: 10px 0;
+  width: min(90%, 550px);
+  margin: 10px auto;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  transition: all ease 400ms;
+}
+
+.btn {
+  background-color: var(--list-bg-color);
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.btn:active {
+  border: 2px solid var(--border-color);
+}
+
+.done {
+  display: none;
+}
+.green {
+  background-color: #38f056 !important;
+  text-decoration: line-through;
+}
